@@ -1,0 +1,13 @@
+/* TODO use less */
+
+body { padding-top: 50px; }
+
+.panel-image {
+  position: relative;
+}
+
+.panel-image .label {
+  position: absolute;
+  float: right;
+  top: 20px;
+}

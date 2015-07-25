@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Add Source</h3>
+    </div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label>
+                    Token
+                </label>
+              {{input class="form-control" type="text" value=token}}
+            </div>
+            <div class="form-group">
+                <label>
+                    Folder
+                </label>
+              {{input class="form-control" type="text" value=folder}}
+            </div>
+            <button class="btn btn-primary" {{action "create"}}>Add Source</button>
+        </form>
+    </div>
+</div>

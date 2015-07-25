@@ -1,0 +1,15 @@
+{{#if sources}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Added Sources</h3>
+        </div>
+        <ul class="list-group">
+          {{#each sources as |source|}}
+              <li class="list-group-item">
+                  <button class="btn btn-danger" {{action "delete" source}}>Delete</button>
+                {{source.folder}} / {{source.shortenToken}}
+              </li>
+          {{/each}}
+        </ul>
+    </div>
+{{/if}}

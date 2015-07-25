@@ -1,0 +1,25 @@
+{{#if groups}}
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Joined Groups</h3>
+        </div>
+        <div class="panel-body">
+            <p>Enable group to share new uploaded images with the group.</p>
+        </div>
+        <ul class="list-group">
+          {{#each groups as |group|}}
+              <li class="list-group-item">
+                  <div class="btn-group" role="group" aria-label="...">
+                    {{#if group.enabledAt}}
+                        <button class="btn btn-succes" {{action "disable" group}}>Stop</button>
+                    {{/if}}
+                    {{#unless group.enabledAt}}
+                        <button class="btn btn-primary" {{action "enable" group}}>Start</button>
+                    {{/unless}}
+                  </div>
+                {{group.code}} (<a {{action "leave" group}}>leave</a>)
+              </li>
+          {{/each}}
+        </ul>
+    </div>
+{{/if}}

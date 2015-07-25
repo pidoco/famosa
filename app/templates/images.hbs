@@ -1,0 +1,20 @@
+<h1>Images
+    <small>Shared</small>
+</h1>
+
+<div class="alert alert-warning" role="alert">
+    <strong>Keep in mind!</strong> Currently the privacy of your shared images cannot be guaranteed.
+</div>
+
+{{#unless model}}
+  No shared images, yet.
+{{/unless}}
+
+{{#each model as |image|}}
+    <div class="panel panel-default panel-image">
+        <span class="label label-info">{{image.code}}</span>
+        <img src="{{image.src}}" class="img-responsive">
+    </div>
+{{/each}}
+
+{{outlet}}

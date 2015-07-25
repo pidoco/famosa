@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Join Group</h3>
+    </div>
+    <div class="panel-body">
+        <p>Joining an non-existing group will create it. To create a private group chose a hard to guess code.</p>
+        <form>
+            <div class="form-group">
+                <label>
+                    Code
+                </label>
+              {{input class="form-control" type="text" value=code}}
+            </div>
+            <button class="btn btn-primary" {{action "join"}}>Join Group</button>
+        </form>
+    </div>
+</div>
