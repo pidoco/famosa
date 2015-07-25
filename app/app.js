@@ -16,3 +16,7 @@ App = Ember.Application.extend({
 loadInitializers(App, config.modulePrefix);
 
 export default App;
+
+
+// TODO add https://github.com/runspired/ember-mobiletouch
+

@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li role="presentation">
+              {{#link-to "images" }}Images{{/link-to}}
+            </li>
+            <li role="presentation">
+              {{#link-to "groups" }}Groups{{/link-to}}
+            </li>
+            <li role="presentation">
+              {{#link-to "sources" }}Sources{{/link-to}}
+            </li>
+        </ul>
+    </div>
+</nav>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>
+

@@ -6,6 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('images');
+  this.route('sources');
+  this.route('404-error', { path: '/*wildcard' });
+  this.route('groups');
 });
 
 export default Router;
