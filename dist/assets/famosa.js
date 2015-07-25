@@ -354,7 +354,7 @@ define('famosa/routes/images', ['exports', 'ember', 'npm:sha-lite'], function (e
               that.store.findAll('group').then(function (groups) {
                 groups.forEach(function (group) {
                   if (group.get('code').sha256() === reImage.get('code')) {
-                    that._storeImage('top-secret', reImage.get('src'), reImage.get('expiresAt'), reImage.get('foreignId'));
+                    that._storeImage(group.get('code'), reImage.get('src'), reImage.get('expiresAt'), reImage.get('foreignId'));
                   }
                 });
               });
@@ -2901,7 +2901,7 @@ catch(err) {
 if (runningTests) {
   require("famosa/tests/test-helper");
 } else {
-  require("famosa/app")["default"].create({"restApiId":"MFRu0jLus3zyQFg7BG0D0ixgA4ApmaIVEF4M1ngr","applicationId":"HyTNFwv4ZFHccOQGoWNpCLRWiUvHgnUHFqeSI5dZ","name":"famosa","version":"0.0.0+0c94e161"});
+  require("famosa/app")["default"].create({"restApiId":"MFRu0jLus3zyQFg7BG0D0ixgA4ApmaIVEF4M1ngr","applicationId":"HyTNFwv4ZFHccOQGoWNpCLRWiUvHgnUHFqeSI5dZ","name":"famosa","version":"0.0.0+bfa40bb5"});
 }
 
 /* jshint ignore:end */

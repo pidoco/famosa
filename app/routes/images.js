@@ -17,7 +17,7 @@ export default Ember.Route.extend({
             that.store.findAll('group').then(function (groups) {
               groups.forEach(function (group) {
                 if (group.get('code').sha256() === reImage.get('code')) {
-                  that._storeImage('top-secret', reImage.get('src'), reImage.get('expiresAt'), reImage.get('foreignId'));
+                  that._storeImage(group.get('code'), reImage.get('src'), reImage.get('expiresAt'), reImage.get('foreignId'));
                 }
               });
             });
