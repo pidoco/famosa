@@ -2901,7 +2901,7 @@ catch(err) {
 if (runningTests) {
   require("famosa/tests/test-helper");
 } else {
-  require("famosa/app")["default"].create({"restApiId":"MFRu0jLus3zyQFg7BG0D0ixgA4ApmaIVEF4M1ngr","applicationId":"HyTNFwv4ZFHccOQGoWNpCLRWiUvHgnUHFqeSI5dZ","name":"famosa","version":"0.0.0+2f8e0b10"});
+  require("famosa/app")["default"].create({"restApiId":"MFRu0jLus3zyQFg7BG0D0ixgA4ApmaIVEF4M1ngr","applicationId":"HyTNFwv4ZFHccOQGoWNpCLRWiUvHgnUHFqeSI5dZ","name":"famosa","version":"0.0.0+0c94e161"});
 }
 
 /* jshint ignore:end */
